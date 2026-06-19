@@ -14,7 +14,7 @@ const gencompChoice=()=>{
 
 const draw=()=>{
     msg.innerText="Game Draw , Try Again";
-    msg.style.backgroundColor="#153243";
+    msg.style.backgroundColor="#415866";
 }
 
 function showWin(userWin,userChoice,compChoice){
@@ -26,6 +26,7 @@ function showWin(userWin,userChoice,compChoice){
     }else{
         compScore++;
         compscorepara.innerText=compScore;
+        console.log("computer");
         msg.innerText=`You Lost! , ${compChoice} Beats Your ${userChoice}`;
         msg.style.backgroundColor="#FF3348";
     }
