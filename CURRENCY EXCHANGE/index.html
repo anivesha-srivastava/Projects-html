@@ -8,17 +8,18 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     </head>
     <body>
-        <div class="contanier">
-            <h2>Currency Converter</h2>
+        <div class="container">
+            <h2 id="header">Currency Converter</h2>
             <form>
                 <div class="Amount">
-                    <p>Amount</p>
+                    <p>Enter Amount</p>
                     <input placeholder="Enter Amount" type="number"/>
                 </div>
                 <div class="dropdown">
                     <div class="from">
                         <p>From</p>
-                        <img src="https://flagsapi.com/US/flat/64.png"/>
+                        <div class="select-container">
+                            <img src="https://flagsapi.com/US/flat/64.png"/>
                         <select name="from">
                             <option value="IND">IND</option>
                             <option value="IND">IND</option>
@@ -26,11 +27,13 @@
                             <option value="IND">IND</option>
                             <option value="IND">IND</option>
                         </select>
+                        </div>
                     </div>
                     <i class="fa-solid fa-right-left"></i>
                     <div class="to">
                         <p>To</p>
-                        <img src="https://flagsapi.com/US/flat/64.png"/>
+                        <div class="select-container">
+                            <img src="https://flagsapi.com/US/flat/64.png"/>
                         <select name="To">
                             <option value="IND">IND</option>
                             <option value="IND">IND</option>
@@ -38,12 +41,16 @@
                             <option value="IND">IND</option>
                             <option value="IND">IND</option>
                         </select>
+                        </div>
                     </div>
                 </div>
-                <div class="msg">1USD = 94.33</div>
-                <button>Exchange</button>
+                <div class="msg">1USD = 94.33 INR</div>
+                <div class="button">
+                    <button>Exchange</button>
+                </div>
             </form>
         </div>
         <script src="java.js"></script>
+        <script src="codes.js"></script>
     </body>
     </html>
