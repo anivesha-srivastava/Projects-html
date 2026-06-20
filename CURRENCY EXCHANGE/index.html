@@ -11,46 +11,41 @@
         <div class="container">
             <h2 id="header">Currency Converter</h2>
             <form>
-                <div class="Amount">
+                <div class="conversion">
+                    <div class="amount">
                     <p>Enter Amount</p>
-                    <input placeholder="Enter Amount" type="number"/>
+                    <input id="from" placeholder="Enter Amount" type="text"/>
+                </div>
+                <i class="fa-solid fa-right-left"></i>
+                <div class="amount">
+                    <p>Converted Amount</p>
+                    <input id="to" placeholder="Converted Amount" type="text" disabled/>
+                </div>
                 </div>
                 <div class="dropdown">
                     <div class="from">
                         <p>From</p>
                         <div class="select-container">
-                            <img src="https://flagsapi.com/US/flat/64.png"/>
-                        <select name="from">
-                            <option value="IND">IND</option>
-                            <option value="IND">IND</option>
-                            <option value="IND">IND</option>
-                            <option value="IND">IND</option>
-                            <option value="IND">IND</option>
-                        </select>
+                        <img src="https://flagsapi.com/US/flat/64.png"/>
+                        <select name="from" value="select"></select>
                         </div>
                     </div>
                     <i class="fa-solid fa-right-left"></i>
                     <div class="to">
                         <p>To</p>
                         <div class="select-container">
-                            <img src="https://flagsapi.com/US/flat/64.png"/>
-                        <select name="To">
-                            <option value="IND">IND</option>
-                            <option value="IND">IND</option>
-                            <option value="IND">IND</option>
-                            <option value="IND">IND</option>
-                            <option value="IND">IND</option>
-                        </select>
+                            <img src="https://flagsapi.com/IN/flat/64.png"/>
+                        <select name="to" value="select"></select>
                         </div>
                     </div>
                 </div>
-                <div class="msg">1USD = 94.33 INR</div>
+                <div class="msg">1 USD = 94.33 INR</div>
                 <div class="button">
                     <button>Exchange</button>
                 </div>
             </form>
         </div>
-        <script src="java.js"></script>
         <script src="codes.js"></script>
+        <script src="java.js"></script>
     </body>
     </html>
